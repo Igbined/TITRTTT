@@ -37,8 +37,3 @@ function showNotification(country, name, avatar) {
 }
 
 // Simulate votes with random data every 5 seconds
-setInterval(() => {
-    getRandomUser().then(userData => {
-        showNotification(userData.country, userData.name, userData.avatar);
-    });
-}, 5000); // Update every 5 seconds
